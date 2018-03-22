@@ -23809,8 +23809,17 @@ var Nav = function (_React$Component) {
   }
 
   _createClass(Nav, [{
+    key: "navigateServices",
+    value: function navigateServices() {
+      var history = this.props.history;
+
+      history.push("/Services");
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         "header",
         { className: "brand" },
@@ -23826,7 +23835,9 @@ var Nav = function (_React$Component) {
               { className: "nav_bar", id: "myNav" },
               _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: "HOME" },
+                { to: "HOME", onClick: function onClick() {
+                    _this2.navigateToServices();
+                  } },
                 "HOME"
               ),
               _react2.default.createElement(
@@ -24005,7 +24016,7 @@ var Last = function (_React$Component) {
                     _react2.default.createElement("img", { src: "src/images/logo.png" }),
                     _react2.default.createElement(
                         "nav",
-                        { "class": "nav_bar" },
+                        { className: "nav_bar" },
                         _react2.default.createElement(
                             "a",
                             { href: "HOME" },

@@ -7,7 +7,7 @@ class Last extends React.Component{
     <section className="sec_below">
     <div className="brand">   
             <img src="src/images/logo.png"/>
-            <nav class="nav_bar">
+            <nav className="nav_bar">
                 <a href="HOME">HOME</a>
                 <a href="SERVICES">SERVICE</a>
                 <a href="PORTFOLIO">PORTFOLIO</a>

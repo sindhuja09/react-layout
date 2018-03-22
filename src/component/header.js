@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-
-
 class Nav extends React.Component {
+    navigateServices() {
+        const { history } = this.props;
+        history.push("/Services");
+      }
     render() {
      return (
       <header className="brand">   
@@ -11,7 +13,9 @@ class Nav extends React.Component {
       <Router>
           <React.Fragment>
       <nav className="nav_bar" id="myNav">
-              <Link to ="HOME">HOME</Link>
+              <Link to ="HOME" onClick={() => {
+            this.navigateToServices();
+          }}>HOME</Link>
               <Link to ="SERVICES">SERVICE</Link>  
       </nav>
       <Route exact path="/Home" component={Home} />
