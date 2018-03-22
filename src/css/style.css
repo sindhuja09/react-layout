@@ -2,17 +2,23 @@
     float: right;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    padding: 13px;
+    padding: 14px;
 }
 .brand{
     background-color: black;
 }
-.nav_bar  a{
+/* .nav_bar  a{
     text-decoration: none;
     padding: 10px;
     color: white;
     font-size: 17px;
 
+} */
+.nav_bar Link{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 17px; 
 }
 
 a:hover {
@@ -203,9 +209,6 @@ figure p{
     } 
     .title h1{
         margin: 10px;
-    }
-    .sec{
-        /* margin: 10px; */
     }
     .brand{
         height: 100px;;
