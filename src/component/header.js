@@ -13,7 +13,8 @@ class Nav extends React.Component {
               <a href="ABOUT">ABOUT</a>
               <a href="CLIENTS">CLIENTS</a>
               <a href="PRICE">PRICE</a>
-              <a href="CONTACT">CONTACT</a>              
+              <a href="CONTACT">CONTACT</a>  
+              {/* <a href="javascript:void(0);" style="font-size:15px;" className="icon" onclick="myFunction()">&#9776;</a>             */}
       </nav>
   </header>
    );
