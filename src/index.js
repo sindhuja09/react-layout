@@ -8,12 +8,15 @@ import Last from './component/last';
 import css from './css/style.css';
 
 const root = document.getElementById('root');
-ReactDOM.render(
-    <div>
-<Nav/>
-<Section/>
-<Last/>
-</div>,
-root
-);
 
+const App = () => (
+    <div>
+    <Nav/>
+    <Section/>
+    <Last/>
+    </div>,
+    root
+  );
+  
+
+export default App;

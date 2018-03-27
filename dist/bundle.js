@@ -23780,7 +23780,7 @@ module.exports = warning;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -23800,86 +23800,69 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Nav = function (_React$Component) {
-  _inherits(Nav, _React$Component);
+    _inherits(Nav, _React$Component);
 
-  function Nav() {
-    _classCallCheck(this, Nav);
+    function Nav() {
+        _classCallCheck(this, Nav);
 
-    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
-  }
-
-  _createClass(Nav, [{
-    key: "navigateServices",
-    value: function navigateServices() {
-      var history = this.props.history;
-
-      history.push("/Services");
+        return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
     }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
 
-      return _react2.default.createElement(
-        "header",
-        { className: "brand" },
-        _react2.default.createElement("img", { src: "src/images/logo.png" }),
-        _react2.default.createElement(
-          _reactRouterDom.BrowserRouter,
-          null,
-          _react2.default.createElement(
-            _react2.default.Fragment,
-            null,
-            _react2.default.createElement(
-              "nav",
-              { className: "nav_bar", id: "myNav" },
-              _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: "HOME", onClick: function onClick() {
-                    _this2.navigateToServices();
-                  } },
-                "HOME"
-              ),
-              _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: "SERVICES" },
-                "SERVICE"
-              )
-            ),
-            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Home", component: Home }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: "/services", component: Services })
-          )
-        )
-      );
-    }
-  }]);
+    _createClass(Nav, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "header",
+                { className: "brand" },
+                _react2.default.createElement("img", { src: "src/images/logo.png" }),
+                _react2.default.createElement(
+                    _reactRouterDom.BrowserRouter,
+                    null,
+                    _react2.default.createElement(
+                        _react2.default.Fragment,
+                        null,
+                        _react2.default.createElement(
+                            "nav",
+                            { className: "nav_bar", id: "myNav" },
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: "HOME" },
+                                "HOME"
+                            ),
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: "SERVICES" },
+                                "SERVICE"
+                            )
+                        ),
+                        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: Home }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: "/services", component: Services })
+                    )
+                )
+            );
+        }
+    }]);
 
-  return Nav;
+    return Nav;
 }(_react2.default.Component);
 
 var Home = function Home() {
-  return _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-      "h2",
-      null,
-      "Home"
-    )
-  );
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+            "h2",
+            null,
+            "Home"
+        )
+    );
 };
-var Services = function Services() {
-  return _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-      "h2",
-      null,
-      "Services"
-    ),
-    _react2.default.createElement("img", { src: "src/images/logo.png" })
-  );
-};
+//   const Services = () => (
+//     <div>
+//       <h2>Services</h2>
+//       <img src="src/images/logo.png"></img>
+//     </div>
+//   );
 exports.default = Nav;
 
 /***/ }),
@@ -24181,6 +24164,10 @@ if(false) {}
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
@@ -24210,13 +24197,18 @@ var _style2 = _interopRequireDefault(_style);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var root = document.getElementById('root');
-_reactDom2.default.render(_react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(_header2.default, null),
-    _react2.default.createElement(_inner2.default, null),
-    _react2.default.createElement(_last2.default, null)
-), root);
+
+var App = function App() {
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_header2.default, null),
+        _react2.default.createElement(_inner2.default, null),
+        _react2.default.createElement(_last2.default, null)
+    ), root;
+};
+
+exports.default = App;
 
 /***/ })
 
